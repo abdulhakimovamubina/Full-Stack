@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Svetafor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scene">
+    <div class="traffic-light-wrapper">
+      <div class="traffic-light">
+        <div class="light-hood">
+          <div class="light red"></div>
+        </div>
+        <div class="light-hood">
+          <div class="light yellow"></div>
+        </div>
+        <div class="light-hood">
+          <div class="light green"></div>
+        </div>
+      </div>
+      <div class="pole"></div>
+      <div class="base"></div>
+    </div>
+
+    <div class="settings">
+  <label class="field">Qizil
+    <input type="number" id="redInput" value="10" min="2" max="99" />
+  </label>
+  <label class="field">Yashil
+    <input type="number" id="greenInput" value="10" min="2" max="99" />
+  </label>
+  <label class="field">Sariq
+    <input type="number" id="yellowInput" value="4" min="1" max="20" />
+  </label>
+</div>
+
+<div class="controls">
+  <button class="btn start">Start</button>
+  <button class="btn pause" disabled>Pause</button>
+  <button class="btn night">Tun</button>
+  <button class="btn stop">Stop</button>
+</div>
+
+  <div class="timer">--</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
